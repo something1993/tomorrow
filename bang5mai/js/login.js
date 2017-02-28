@@ -1,0 +1,13 @@
+$(function(){
+	if(checkCookie("username")){
+		$(".email").val(getCookie("username"));
+	}else{		
+		$(".email").val("");}
+	$(".reg").click(function(){			
+		if($(".psw").val()==getCookie("passwords")){
+			window.location="index.html";
+		}else{				
+			$(".paf").css("visibility","visible")
+			}
+	})	
+})

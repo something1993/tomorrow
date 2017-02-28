@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/item_detail.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/item_detail.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/cookie.js" ></script>
+	</head>
+	<body>
+		<div class="header m">
+			<div class="header_left l"><a href="index.html">想5买，享帮帮</a></div>
+			<ul class="header_right r">
+				<li class="qq"><a href="#"></a></li>
+				<li class="wx"><a href="#"></a></li>
+				<li class="wb"><a href="#"></a></li>
+				<li ><a href="login.html">登录</a></li>
+				<li ><a href="register.html">注册</a></li>
+				<li class="h_order"><a href="myorder.html">我的订单</a></li>
+				<li ><a href="collect.html">我的收藏</a></li>
+				<li class="h_phone pr"><a href="#">手机版</a><div class="h_phone_img"><img src="img/index.img/tp_phone.png"/></div></li>
+				<li ><a href="#">帮5淘</a></li>
+				<li ><a href="#" style="color:#ff7800">帮助中心</a></li>
+				<li  class="h_shopcar"><a href="shopcar.html">购物车<span style="color:#ff7800;margin-left:3px;">0</span></a></li>				
+			</ul>
+		</div>
+		<div class="logo m">
+			<div class="logo_left l"><a href="index.html"><img src="img/index.img/logo.png"/></a></div>
+			<div class="logo_center l">
+				<div class="logo_up">
+					<input type="text" id="txt" class="l" value="输入商品网址或关键词，直通全网，快速帮5购！"/>
+					<input type="button" id="btn" class="l cp" value="帮5搜" />
+				</div>
+				<ul class="logo_down">
+					<li class="l_f red"><a>最in圣诞party妆</a></li>
+					<li class="red"><a>圣诞约会搭配攻略</a></li>
+					<li><a>冬装</a></li>
+					<li><a>iphone 6s</a></li>
+					<li><a>圣诞礼物</a></li>
+					<li><a>香水</a></li>
+					<li><a>巧克力</a></li>
+					<li><a>防PM2.5口罩</a></li>
+				</ul>
+			</div>
+			<div class="logo_right l">
+				<div class="logo_right_01 l">
+					<span></span>
+					<h3>400-085-0505</h3>
+				</div>
+				<div class="logo_right_02 l">
+					<span></span>
+					<h3>mc@b5m.com</h3>
+				</div>
+				<div class="logo_right_03 l">
+					<a href="#">常见问题</a>
+				</div>				
+			</div>
+		</div>
+		<div class="detail_nav">
+			<ul class="detail_navs m">
+				<li><a href="">超划算</a></li>
+				<li><a href="">品牌货栈</a></li>
+				<li><a href="">逛街</a></li>
+				<li><a href="">发现</a></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="intro m">
+				<div class="intro_left l">
+					<div class="intro_ll l">
+						<div class="intro_left01 pr">
+							<img src="img/item.img/blue_b.jpeg" />
+							<div class="zeng pa"><img src="img/item.img/icon_zeng.png"/></div>
+						</div>
+						<ul class="intro_left02">
+							<li><img src="img/item.img/blue_b.jpeg"/></li>
+							<li><img src="img/item.img/bag2.jpeg"/></li>
+							<li><img src="img/item.img/bag3.jpeg"/></li>
+							<li><img src="img/item.img/bag4.jpeg"/></li>
+							<li><img src="img/item.img/bag5.jpeg"/></li>
+							<li><img src="img/item.img/bag6.jpeg"/></li>
+						</ul>
+					</div>
+					<div class="intro_lr l">
+						<h3>SWISSGEAR 男女行李箱 拉杆箱 万向轮旅行箱 登机箱 24寸/20寸</h3>
+						<p class="intro_p01">在@<a href="">超划算</a>帮您购买</p>
+						<p class="intro_p02"><span class="s_price">价格</span><span class="s_y">￥</span><span class="s_yu">175-189</span><span class="s_old">￥299</span></p>
+						<p class="intro_p03"><span>发货声明</span><span>下单后1-3日发货</span></p>
+						<div class="intro_r1"><img src="img/item.img/bg1.jpg"/></div>
+						<div class="intro_tip pr">
+							<h4 class="pa">请选择您要的商品信息<a></a></h4>
+							<div class="intro_c1">
+								<span>颜色分类</span>
+								<div>
+									<a><img src="img/item.img/blue_b.jpeg"/><i>加州蓝</i></a>
+									<a><img src="img/item.img/bag2.jpeg"/><i>梦幻银</i></a>
+								</div>
+							</div>
+							<div class="intro_c2">
+								<span>尺寸</span>
+								<div>
+									<a>20寸</a>
+									<a>24寸</a>
+								</div>
+							</div>
+							<div class="intro_c3">
+								<span>数量</span>
+								<a class="a1">-</a>
+								<a class="a2">1</a>
+								<a class="a3">+</a>
+								<b>件</b>
+								<i>(库存2000件)</i>
+							</div>
+							<div class="intro_c4">
+								<span>销量</span>
+								<b>913件</b>
+								<p><span class="tell">您已选择了：</span><span class="pro_color"></span><span class="join">/</span><span class="pro_size"></span></p>
+							</div>
+							<div class="intro_c5">
+								<a href="###"><div class="intro_c50">自行购买</div></a>
+								<div class="intro_c51"><a href="###"><span>立即购买</span></a><a href="###"><i>加入购物车</i></div></a>								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="intro_right r"></div>
+			</div>
+			<!--商品详情-->
+			<div class="detail_img m">
+				<div class="detail_img_left">
+					<div class="detail_img01"></div>
+					<div class="detail_img02">
+						<h3>热门推荐</h3>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						
+					</div>
+					<div class="detail_img02">
+						<h3>超划算</h3>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="img/item.img/hot1.jpeg"/></dt>
+								<dd><span>￥35</span><em>it's skin 伊思 babyface婴儿天使笑容妆前乳 35g</em></dd>
+							</dl>
+						</a>
+						
+					</div>
+				</div>
+				<div class="detail_img_right pr">
+					<!--tab列表-->
+					<ul class="dir_ul">
+						<li>商品详情</li>
+						<li>商户评级</li>
+						<li>规格参数</li>
+					</ul>
+					<div class="dir_p pa">
+						<p class="active"><img src="img/item.img/dir.jpg"/></p>
+						<p>我要评价</p>
+						<p>暂无参数</p>
+					</div>
+				</div>
+			</div>		
+			
+			
+		</div>
+		<!--侧边滑动栏-->
+		<div class="side">
+			<div class="qu pa">
+				<span>小帮咨询</span>
+			</div>
+			<div class="yh pa">
+				<p>优惠券</p>
+				<div class="yh_r">
+					<h1>未登陆</h1>
+					<h2>登陆</h2>
+				</div>
+			</div>			
+			<div class="shopc pa">
+				<p>购物车</p>
+				<h3>1</h3>
+			</div>
+		</div>
+		<!--成功加入购物车提示-->		
+		<div class="flo"></div>
+		<div class="succses">
+			<a href="item_detail.html" class="conti">继续购物</a>
+			<a href="shopcar.html" class="gos">去购物车结算</a>
+		</div>
+		<!--吸顶菜单-->
+			<div class="xceil">
+				<ul class="dir_ul">
+					<li>商品详情</li>
+					<li>商户评级</li>
+					<li>规格参数</li>
+				</ul>
+			</div>
+	</body>
+</html>

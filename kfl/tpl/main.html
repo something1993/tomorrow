@@ -1,0 +1,27 @@
+<div class="container">
+
+    <input type="text" placeholder="请输入菜品名称"
+            ng-model= "kw"
+            />
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="item in dishList">
+            <a href="#/detail/{{item.did}}">
+                <div class="media">
+                    <div class="media-left">
+                        <img ng-src="img/{{item.img_sm}}" alt=""/>
+                    </div>
+
+                    <div class="media-body">
+                        <h1>{{item.name}}</h1>
+                        <p>{{item.material}}</p>
+                        <p>{{item.price | currency:'￥' }}</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <button class='btn btn-success'ng-show='hasMore' ng-click="loadMore()">加载更多</button>
+    <p ng-hide="hasMore">没有更多数据可以加载</p>
+
+</div>

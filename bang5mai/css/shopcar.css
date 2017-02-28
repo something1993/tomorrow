@@ -1,0 +1,30 @@
+.shop_bg1{width:1180px;}
+.shop_con{width:1180px;background: #fffcef;border:1px solid #fff3cd;margin-top:20px;padding-bottom: 10px;}
+.shop_con h3{height:35px;line-height: 35px;font-size: 14px;margin-left:40px;}
+.shop_ul{padding:0 10px;width:1160px;}
+.shop_ul li{background:#fff;width:1100px;height:63px;border-bottom:1px dashed #ccc;padding:16px 0 16px 60px;}
+.shop_ul .shop_src{width:60px;height:60px;float: left;}
+.shop_ul .shop_src img{width:60px;height:60px;border:1px solid #ccc;}
+.shop_ul .shop_name{color:#000;width:220px;height:50px;padding-top:10px;margin-left:12px;line-height: 20px;float: left;}
+.shop_ul .shop_cs{width:176px;height:60px;line-height: 60px;margin-left:35px;font-size: 12px;color: #999;float:left;}
+.shop_ul .shop_price{margin-left:68px;line-height: 60px;height:60px;}
+.shop_ul .shop_number{margin-left:70px;width:62px;height:24px;margin-top:18px;border:1px solid #cacaca;}
+.shop_ul .shop_number a{display: block;width:15px;height:24px;background: #ededed;line-height: 24px;text-align: center;float: left;}
+.shop_ul .shop_number b{float:left;display: block;width:30px;height:24px;line-height: 24px;text-align: center;background: #fff;border-left:1px solid #cacaca;border-right:1px solid #cacaca;}
+.shop_ul .shop_all{margin-left:98px;height:60px;line-height: 60px;color: red;}
+.shop_ul .shop_del{margin-left: 110px;height:60px;line-height: 60px;}
+/*结算*/
+.setment{width:1180px;height:60px;background: #f0f0f0;margin-top: 20px;line-height: 60px;}
+.setbox{width:320px;height:60px;}
+.setbox .setfont{width:68px;float: left;}
+.setbox em{display: block;float: left;font-style: normal;font-weight: 600;color: red;}
+.setbox span{display: block;width:100px;height:60px;color:red;font-weight: 600;float: left;}
+.setbox a{display: block;border-radius:3px;text-align:center;font-size:20px;float: left;width:132px;height:52px;margin-top:4px;background: #ff7a4d;line-height: 52px;color:#fff;}
+
+
+
+
+
+
+
+

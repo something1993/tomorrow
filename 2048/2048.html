@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="2048.css" />
+<script src="2048.js"></script>
+</head>
+<body>
+    <p>
+		Score:&nbsp&nbsp&nbsp<span id="score"></span>
+        &nbsp&nbsp&nbsp;TOP:&nbsp&nbsp&nbsp<span id="top1"></span>
+	</p>
+	<div id="gridPanel">
+		
+	</div>
+	<div id="gameOver">
+		<div><!--全屏半透明背景--></div>
+        <p><!--前景的弹出窗口-->
+            Game Over!<br>
+            Score:<span id="finalScore"></span><br>
+            <a class="button" onclick="game.start()">TRY AGAIN!!!</a>
+        </p>
+	</div>
+</body>
+</html>

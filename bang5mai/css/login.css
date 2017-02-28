@@ -1,0 +1,19 @@
+.re_a{display: block;width:134px;height:60px;margin-top:102px;}
+.re_h{width:500px;height:38px;font-size: 36px;margin-top: 57px;}
+.log_div{width:350px;height:360px;margin-top:38px;}
+.log_div h3{height:67px;font-size: 14px;line-height: 70px;color:#666;font-weight: 100;}
+.email{width:350px;height:48px;line-height: 48px;text-indent: 8px;color:#a9a9a9;font-size: 12px;border-radius:5px;border:1px solid #e6e6e6;}
+.psw{width:350px;height:48px;line-height: 48px;text-indent: 8px;color:#a9a9a9;font-size: 12px;border-radius:5px;border:1px solid #e6e6e6;border-top:0;}
+.login_01{width:350px;height:20px;margin:14px 0 4px;}
+.login_01 li{float: left;}
+.login_01 .login_li1 a{display: block;width:20px;height:20px;background: url(../img/index.img/common_min_z.png) 0 -31px;}
+.login_01 .login_li2 a{display: block;width:20px;height:20px;background: url(../img/index.img/common_min_z.png) 0 -53px;margin:0 16px;}
+.login_01 .login_li3 a{display: block;width:20px;height:20px;background: url(../img/index.img/common_min_z.png) 0 -75px;}
+.login_01 .login_li4{float:right;}
+.login_01 .login_li4 a{color:#b7b7b7;}
+.reg{cursor:pointer;width:350px;height:42px;line-height: 42px;text-align:center;color:#fff;font-size: 18px;border-radius:5px;background: #f78b02;border: 0;}
+.login{cursor:pointer;margin-top:15px;width:350px;height:42px;line-height: 42px;text-align:center;color:#666;font-size: 18px;border-radius:5px;border:1px solid #e6e6e6;background: #fff;}
+
+.paf{visibility:hidden;color: red;height:30px;line-height: 18px;text-indent: 26px;background: url(../img/login.img/f.jpg) no-repeat left top;}
+
+

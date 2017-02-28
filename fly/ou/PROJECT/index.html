@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>HTML5版本的飞机大战</title>
+  <meta charset="utf-8">
+ </head>
+
+ <body>
+  <!-- div元素用于页面布局 -->
+  <div style="margin:0 auto;width:480px; height:650px;background:#323232; text-align:center;vertical-align:middle">
+    <!-- 为游戏提供容器 -->
+	<canvas id="canvas" width="480px" height="650px"></canvas>
+  </div>
+  <script>
+	var canvas = document.getElementById("canvas");
+	var context = canvas.getContext("2d");
+	// 0 游戏的初始化
+	// 01 得到画布的宽度和高度
+	const WIDTH = canvas.width;
+	const HEIGHT = canvas.height;
+	// 02 定义游戏的 5 个阶段
+	const START = 0;//欢迎
+	const STARTTING = 1;//过渡
+	const RUNNING = 2;//运行
+	const PAUSED = 3;//暂停
+	const GAMEOVER = 4;//结束
+	// 03 定义变量游戏的当前阶段
+	var state = 0;
+	// 1 游戏的欢迎阶段
+	// 11 背景效果的实现
+	// 1101 载入所需的图片
+	var bgImg = new Image();
+	bgImg.src = "images/background.png";
+	// 1102 初始化相关数据
+	var BG = {
+		imgs : bgImg,//背景所需图片
+		width : 480,
+		height : 852
+	}
+	// 1103 创建游戏背景构造函数
+	function Bg(config){//低耦合
+		// 背景的图片
+		this.imgs = config.imgs;
+		this.width = config.width;
+		this.height = config.height;
+		// 定义 2 张图片的y轴
+		this.y1 = 0;
+		this.y2 = -this.height;
+		// 绘制方法
+		this.paint = function(){
+			context.drawImage(this.imgs,0,this.y1);
+			context.drawImage(this.imgs,0,this.y2);
+		}
+		// 移动方法
+		this.step = function(){
+			// 向下移动
+			this.y1++;
+			this.y2++;
+			// 临界判断
+			if(this.y1 == this.height){
+				this.y1 = -this.height;
+			}
+			if(this.y2 == this.height){
+				this.y2 = -this.height;
+			}
+		}
+	}
+	// 1104 创建背景对象
+	var bg = new Bg(BG);
+	// 12 游戏的LOGO
+	// 1201 加载LOGO图片
+	var logo = new Image();
+	logo.src = "images/start.png";
+
+	// 1-2 欢迎切换到过渡阶段
+	canvas.onclick = function(){
+		if(state == START){
+			state = STARTTING;
+		}
+	}
+	// 2 动画过渡阶段
+	// 21 加载所需所有图片
+	var loadings = [];
+	loadings[0] = new Image();
+	loadings[0].src = "images/game_loading1.png";
+	loadings[1] = new Image();
+	loadings[1].src = "images/game_loading2.png";
+	loadings[2] = new Image();
+	loadings[2].src = "images/game_loading3.png";
+	loadings[3] = new Image();
+	loadings[3].src = "images/game_loading4.png";
+	// 22 初始化必要的数据
+	var LOADING = {
+		imgs : loadings,//所需图片
+		width : 186,
+		height : 38,
+		count : loadings.length
+	}
+	// 23 创建过渡动画构造函数
+	function Loading(config){
+		// 必要的初始化属性
+		this.imgs = config.imgs;
+		this.width = config.width;
+		this.height = config.height;
+		this.count = config.count;
+		// 表示数组的角标
+		this.index = 0;
+		// 绘制方法
+		this.paint = function(){
+			context.drawImage(this.imgs[this.index],0,(HEIGHT-this.height));
+		},
+		// 动态方法
+		this.step = function(){
+			this.index++;
+			// 动画执行完毕
+			if(this.index==this.count){
+				state = RUNNING;
+			}
+		}
+	}
+	// 24 创建动画对象
+	var loading = new Loading(LOADING);
+	
+	setInterval(function(){
+		bg.paint();
+		bg.step();
+		switch (state){
+			case START:
+				context.drawImage(logo,20,0);
+				break;
+			case STARTTING:
+				loading.paint();
+				loading.step();
+				break;
+			case RUNNING:
+				break;
+			case PAUSED:
+				break;
+			case GAMEOVER:
+				break;
+		}
+		
+		
+	},100);
+	
+  </script>
+ </body>
+</html>

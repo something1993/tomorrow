@@ -1,0 +1,8 @@
+.fg_con{width:398px;height:275px;margin:110px auto 0;}
+.fg_con h3{font-size: 18px;color: #666;font-weight: 100;}
+.fg_con form{margin-top: 46px;color:#666;font-size: 12px;}
+#tel{width:160px;height:32px;line-height: 32px;border-radius: 3px;border:1px solid #ccc;}
+#rand{width:128px;height:32px;background:#f8f8f8;line-height: 32px;text-align:center;border-radius: 3px;border:1px solid #ccc;margin-bottom: 16px;}
+label{width:80px;height:32px;text-align: justify;}
+#randm{width:160px;height:32px;line-height: 32px;background:#f8f8f8;border-radius: 3px;border:1px solid #ccc;}
+.fg_next{width:165px;height:32px;border-radius: 3px;border:1px solid #ccc;line-height: 32px;text-align: center;color: #fff;background: #d3d3d3;margin-left:82px;}

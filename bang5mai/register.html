@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册界面</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script type="text/javascript" src="js/js.js" ></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/cookie.js" ></script>
+	</head>
+	<body style="background: #f9f9f9;">
+		<a href="index.html" class="re_a m"><img src="img/login.img/logo.png"/></a>
+		<h2 class="re_h m">一个账号，享受多个帮5买优惠</h2>
+		<div class="re_div m">
+			<h3>欢迎注册</h3>		
+		<form class="pr">
+			<input type="text" placeholder="验证手机" class="txt1" id="txt1"/> 
+			<p id="tel1" class="pa">完成验证后，您可以使用该手机号登陆和找回密码</p>			
+			<p id="tel2" class="pa">输入手机格式有误，请输入正确的手机号</p>
+			<input type="text" placeholder="图片验证码" class="txt2"/>
+			<input type="button" value="" class="btn1"/>
+			<span>看不清</span>
+			<a href="###" class="txt_change">换一换</a>
+			<p id="sec_code" class="pa">请输入右边图片文字，验证通过后获取短信验证码</p>
+			<p id="sec_codef" class="pa">输入错误</p>			
+			<input type="text" placeholder="手机验证码" class="phone" />
+			<input type="button" value="获取短信验证码" class="btn2"/>
+			<p class="pa" id="tel_code">手机验证码不能为空</p>
+			<input type="password"  class="pwd1" placeholder="请设置密码"/>
+			<p class="pa" id="psw">6-15位字母，建议数字，字母两种以上组合</p>
+			<p class="pa" id="pswf">字母长度只能在6-15位之间</p>						
+			<input type="password" placeholder="请确认密码" class="pwd2"/>
+			<p class="pa" id="conf">请再次输入密码</p>
+			<p class="pa" id="confi">两次输入密码不一致</p>
+			<input type="checkbox" checked="checked" class="check" /><span style="color:#999;display: block;width:217px;height:45px;line-height:45px;float:left;">我已阅读并同意《帮5买用户注册协议》</span>			
+			<input type="button" value="注     册" class="reg" id="regbtn"/ >
+			<a href="login.html"><input type="button" value="登    录" class="login"/></a>
+		</form>
+		</div>
+	</body>
+</html>

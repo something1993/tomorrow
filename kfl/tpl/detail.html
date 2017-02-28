@@ -1,0 +1,26 @@
+<div>
+    <ul class="breadcrumb">
+        <li><a href="#/start">首页</a></li>
+        <li>详情</li>
+    </ul>
+
+    <div>
+        <div class="panel">
+            <div class="panel-heading">
+                <h2>{{dish.name}}</h2>
+            </div>
+
+            <div class="panel-body">
+                <img ng-src="img/{{dish.img_sm}}"/>
+                <p>{{dish.material}}</p>
+                <p>{{dish.price | currency:'￥'}}</p>
+            </div>
+            <div class="panel-footer">
+                <button ng-click="jump('/order/'+dishId)"> 我要订餐 </button>
+                <button ng-click="jump('/main')"> 我再看看 </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>

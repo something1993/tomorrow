@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>用户中心</title>
+    <link rel="stylesheet" type="text/css" href="jd_index.css" >
+	<link rel="icon" href="img/favicon.ico">
+ </head>
+ <body>
+  <div class="header"> </div>
+  <div class="main" >
+	<div id="nav-left">
+		<h1>我的京东</h1>
+		<ul>
+			<li ><a href="#my-order" data-toggle="item">我的订单</a></li>
+			<li ><a href="#pay-record" data-toggle="item">消费记录</a></li>
+			<li class="active"><a href="#lucky-draw" data-toggle="item">幸运抽奖</a></li>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="my-order" class="box">
+			<table>
+				<thead>
+					<th>订单详情</th>
+					<th>收货人</th>
+					<th>订单金额</th>
+					<th>
+						<select name="" id="">
+							<option value="0">最近三个月</option>
+						</select>
+					</th>
+					<th>
+						<select name="" id="">
+							<option value="0">全部状态</option>
+						</select>
+					</th>
+					<th>
+						操作
+					</th>
+				</thead>
+				<tbody id="orders">
+					<!--tr>
+						<td colspan="6">
+							订单编号:7894561233
+							<a href="#" class="n">什么么旗舰店</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/prod1.jpg" width="50" height="50">
+							<img src="img/prod2.jpg" width="50" height="50" border="0" alt="">
+						</td>
+						<td>叮当</td>
+						<td>￥21.90 <br>在线支付</td>
+						<td>2015-5-20 <br>13：40：20</td>
+						<td>等待发货</td>
+						<td>
+							<a href="#">查看</a> <br>
+							<a href="#">确认收货 </a><br>
+							<a href="#">取消订单</a>
+						</td>
+					</tr-->
+					
+				</tbody>
+			</table>
+			<ul class="pager">
+				<!--li class="f"><a href="#" >0</a></li-->
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+		</div>
+		<div id="pay-record" class="box ">
+	
+				<canvas id="canvas-buy-stat" >
+					您的浏览器不支持Canvas绘图！
+				</canvas>
+
+		</div>
+		<div id="lucky-draw" class="box active">
+			<canvas id="canvas-lottery" width="500" height="500">
+				不支持Canvas技术！
+			</canvas>
+			<button id="bt-lottery" type="button" disabled>
+				开始抽奖(剩余抽奖次数:<span>0</span>)次
+			</button>
+		</div>
+	</div>
+  </div>
+  <div class="footer"></div>
+  <div class="modal"><!--半透明遮罩层-->
+	<div class="modal-dialog"><!--宽度/定位-->
+		<div class="modal-content"><!--背景色/边框/倒角/阴影-->
+			<h3 >用户登录</h3>
+			<div class="waring">请保管好您的账号和密码！！！</div>
+			<form id="login-form">
+				用户名：<input id="n" type="text" name="name" placeholder="请输入您的用户名" value="强东"><br>
+				密码名：<input id="p" type="password" name="pwd" placeholder="请输入密码" value="123456"><br><br>
+				<input type="button" class="submit" value="确认登录">
+			</form>
+		</div>
+	</div>
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+	<script src="js/jd.js"></script>
+	<script src="js/fusioncharts.js"></script>
+
+ </body>
+</html>

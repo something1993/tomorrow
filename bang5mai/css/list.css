@@ -1,0 +1,24 @@
+.list_top{width:1180px;height:175px;margin:15px auto;border:1px solid #fad5b4;}
+.list_top h3{width:1180px;height:31px;background: #fffaf4;line-height: 31px;text-indent: 32px;font-size: 12px;}
+.list_ul{width:1180px;height:142px;border-top:2px solid #fad5b4;border-bottom:2px solid #fad5b4;}
+.list_ul li{text-indent:40px;width:1180px;height:35px;line-height: 35px;border-bottom: 1px dashed #fad5b4;}
+.list_ul li span{display: block;width:100px;height:35px;float: left;}
+.list_ul li a{display: block;width:100px;height:35px;float: left;color:#666;}
+.list_box{width:1180px;margin-top:20px;}
+.list_con{width:960px;float: left;margin-top:20px;}
+.list_con li{width:210px;height:300px;border-bottom: 1px solid #ccc;float: left;padding:10px 5px;}
+.list_con li img{width:210px;height:210px;border:2px solid #ccc;}
+.list_con li a{display: block;width:210px;height:40px;margin-top:10px;color:#666;}
+.list_con li em{display: block;width:10px;height:20px;float: left;color:#f2490e;font-style: normal;font-weight: 600;}
+.list_con li span{display: block;float: left;width:50px;height:20px;color:#f2490e;font-weight: 600;}
+.list_con li i{display: block;width:48px;height:15px;border-radius: 4px;background: #fe9900;float: left;color: #fff;font-size: 14px;text-align: center;font-style: normal;line-height: 14px;}
+.list_end{width:940px;height:32px;padding:22px 0 22px 240px;clear:both;}
+.list_end div{width:32px;height:32px;line-height: 32px;text-align: center;color:#666;background: #fcfcfc;border:1px solid #ccc;margin-right: 10px;}
+
+.list_r{width:210px;border:1px solid #ddd;margin-top: 30px;}
+.list_r h3{color:red;width:210px;height:32px;line-height: 32px;text-indent: 10px;background: #f8f8f8;border-bottom: 1px solid #ddd;}
+.list_r dl{width:210px;height:360px;}
+.list_r dt{padding:20px 20px 0;width:170px;height:260px;}
+.list_r dt img{width:170px;height:260px;}
+.list_r dd span{color:red;display: block;margin-left:20px;font-weight: 600;}
+.list_r dd em{font-style: normal;color:#666;line-height: 18px;height:18px;display: block;margin-left:20px;margin-right: 20px;}

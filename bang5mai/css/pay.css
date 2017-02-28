@@ -1,0 +1,42 @@
+.pay_con{width:980px;height:100px;margin-top: 20px;background:#f8f8f8 url(../img/item.img/pay.jpg) no-repeat 20px 25px;}
+.pay_conr{width:170px;height:100px;line-height: 100px;}
+.pay_conr em{float: left;display: block;width:76px;font-style: normal;color:#666;}
+.pay_conr i{float: left;display: block;width:10px;font-style: normal;color:#666;color:red;font-weight: 600;}
+.pay_conr span{display: block;color: red;font-weight: 600;float: left;font-size: 25px;margin-left:5px;line-height: 90px;}
+.pay01{width:980px;height:60px;line-height: 80px;border-bottom: 2px solid red;margin:0 auto;font-size: 16px;}
+.pay_style{width:980px;height:200px;background: #f8f8f8;}
+.pay_pay{width:980px;height:45px;margin-top: 20px;line-height: 45px;margin-bottom: 20px;}
+.pay_r{width:360px;height:45px;}
+.pay_r em{font-style: normal;display: block;float: left;width:96px;font-size: 16px;}
+.pay_r i{font-style: normal;display: block;float: left;width:10px;font-size: 14px;color:red;font-weight: 600;}
+.pay_r span{display: block;float: left;width:95px;font-size: 16px;color:red;font-weight: 600;margin-left: 4px;}
+.pay_r a{display: block;width:153px;height:45px;line-height:45px;text-align:center;color:#fff;font-size:20px;border-radius:5px;float: left;background: #ff5e00;}
+.pay_style h4{width:980px;height:40px;line-height: 40px;text-indent: 30px;font-size: 12px;}
+.pay_01{width:945px;height:44px;padding-left:35px;}
+.pay_01 .pay_011{width:144px;height:44px;border:1px solid #eee;background: #fff url(../img/pay.img/wxzf.png) no-repeat right top;}
+.pay_01 .pay_011 span{display: block;width:14px;height:14px;margin:16px 0 0 9px;background: url(../img/pay.img/pay-radio.png) 0 0;}
+.pay_02{width:945px;height:44px;padding-left:35px;}
+.pay_02 .pay_021{float:left;width:144px;height:44px;border:1px solid #eee;background: #fff url(../img/pay.img/gsyhtj.png) no-repeat right top;margin-right:36px;}
+.pay_02 span{display: block;width:14px;height:14px;margin:16px 0 0 9px;background: url(../img/pay.img/pay-radio.png) 0 0;}
+.pay_02 .pay_022{float:left;width:144px;height:44px;border:1px solid #eee;background: #fff url(../img/pay.img/jsyhtj.png) no-repeat right top;margin-right:36px;}
+.pay_02 span{display: block;width:14px;height:14px;margin:16px 0 0 9px;background: url(../img/pay.img/pay-radio.png) 0 0;}
+.pay_02 .pay_023{float:left;width:144px;height:44px;border:1px solid #eee;background: #fff url(../img/pay.img/zsyhtj.png) no-repeat right top;margin-right:36px;}
+.pay_02 span{display: block;width:14px;height:14px;margin:16px 0 0 9px;background: url(../img/pay.img/pay-radio.png) 0 0;}
+.pay_02 .pay_024{float:left;width:144px;height:44px;border:1px solid #eee;background: #fff url(../img/pay.img/jtyhtj.png) no-repeat right top;margin-right:36px;}
+.pay_02 span{display: block;width:14px;height:14px;margin:16px 0 0 9px;background: url(../img/pay.img/pay-radio.png) 0 0;}
+.pay_style span.active{background: url(../img/pay.img/pay-radio.png) no-repeat 0 -20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

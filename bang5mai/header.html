@@ -1,0 +1,84 @@
+
+		<div class="header m">
+			<div class="header_left l"><a href="index.html">想5买，享帮帮</a></div>
+			<ul class="header_right r">
+				<li class="qq"><a href="#"></a></li>
+				<li class="wx"><a href="#"></a></li>
+				<li class="wb"><a href="#"></a></li>
+				<li ><a href="login.html">登录</a></li>
+				<li ><a href="register.html">注册</a></li>
+				<li class="h_order"><a href="myorder.html">我的订单</a></li>
+				<li ><a href="collect.html">我的收藏</a></li>
+				<li class="h_phone pr"><a href="#">手机版</a><div class="h_phone_img"><img src="img/index.img/tp_phone.png"/></div></li>
+				<li ><a href="#">帮5淘</a></li>
+				<li ><a href="#" style="color:#ff7800">帮助中心</a></li>
+				<li  class="h_shopcar"><a href="shopcar.html">购物车<span style="color:#ff7800;margin-left:3px;">0</span></a></li>				
+			</ul>
+		</div>
+		<div class="logo m">
+			<div class="logo_left l"><a href="index.html"><img src="img/index.img/logo.png"/></a></div>
+			<div class="logo_center l">
+				<div class="logo_up">
+					<input type="text" id="txt" class="l" value="输入商品网址或关键词，直通全网，快速帮5购！"/>
+					<input type="button" id="btn" class="l cp" value="帮5搜" />
+				</div>
+				<ul class="logo_down">
+					<li class="l_f red"><a>最in圣诞party妆</a></li>
+					<li class="red"><a>圣诞约会搭配攻略</a></li>
+					<li><a>冬装</a></li>
+					<li><a>iphone 6s</a></li>
+					<li><a>圣诞礼物</a></li>
+					<li><a>香水</a></li>
+					<li><a>巧克力</a></li>
+					<li><a>防PM2.5口罩</a></li>
+				</ul>
+			</div>
+			<div class="logo_right l">
+				<div class="logo_right_01 l">
+					<span></span>
+					<h3>400-085-0505</h3>
+				</div>
+				<div class="logo_right_02 l">
+					<span></span>
+					<h3>mc@b5m.com</h3>
+				</div>
+				<div class="logo_right_03 l">
+					<a href="#">常见问题</a>
+				</div>				
+			</div>
+		</div>
+		<div class="navbox">
+		<div class="nav m pr">
+			<h3>全部商品分类</h3>
+			<ul class="nav_ul l">
+				<li><a href="navigation.html">超划算</a></li>
+				<li><a href="">帮韩品</a></li>
+				<li><a href="">艺术馆</a></li>
+				<li><a href="">韩国馆</a></li>
+				<li><a href="">帮社区</a></li>
+			</ul>
+			<div class="nav_right pa"></div>
+		</div>
+		</div>
+		<!--将公共效果写成内联的样式 导入；顶部：滑过"手机版"的效果-->
+	<script type="text/javascript" src="js/cookie.js" ></script>
+	<script type="text/javascript">
+			$(".header_right .h_phone").hover(function(){
+			$(".header_right .h_phone .h_phone_img").slideDown(200);
+		},
+		function(){
+			$(".header_right .h_phone .h_phone_img").slideUp(200);
+		})
+		cookie();
+		function cookie(){			
+	   	if(checkCookie("username")){
+	   			var $tp=getCookie("username");
+	   			var $tp0=$tp.slice(0,4)+"****"+$tp.slice(8,11);	   			
+		   		var oWelcome = '您好,'+$tp0+'';
+		   		$(".header_right>li").eq(3).find("a").html(oWelcome);
+		   		$(".header_right>li").eq(4).find("a").html("");
+		   		$('#welcome').html(oWelcome);
+		   	}		
+		}
+
+	</script>

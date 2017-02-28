@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>确认订单</title>
+	</head>
+	<body>
+		<div class="order_head"></div>
+		<div class="order_c m">订单确认页</div>
+		<div class="add m">
+			<h3>1,地址选择</h3>
+			<form action="">			
+			<label>*收货人姓名:</label><input type="text" name="text_name" id="text_name" value="" class="required"/></br></br></br>
+			<label>*收货地址:</label>
+			<div class="main">
+			  <center>
+			    <select id="loc_province" style="width:120px;">
+			    </select>
+			    <select id="loc_city" style="width:120px; margin-left: 10px">
+			    </select>
+			    <select id="loc_town" style="width:120px;margin-left: 10px">
+			    </select>			   
+			  </center>
+			</div></br>
+			<label>*详细地址:</label><textarea name="" rows="8" cols="60" class="required" style="float: left;" class="texta"></textarea></br></br></br></br></br></br></br></br></br></br>
+			<label>*手机号码:</label><input type="text" name="text_name" id="text_tel" value="" class="required"/></br></br></br>
+			<input type="checkbox" name="name_check" id="name_check" value="" checked="checked"/>设为默认地址</br>
+			<input type="submit" name="button1" id="button1" value="确定" />
+			<input type="button" name="button2" id="button2" value="取消" />
+			</form>
+		</div>
+		<div class="addressbox m"><div class="address"><p></p><span></span><em></em><i></i><strong></strong><b></b></div></div>
+		<div class="order_list m">
+			<h3>1,商品清单<a href="shopcar.html">返回购物车</a></h3>
+			<div class="order_box">	
+				<h4>聚划算</h4>
+				<ul class="order_ul">
+					<!--<li>
+						<div class="order_src l"><img src="img/item.img/bag2.jpeg"/></div>
+						<a href="item_detail.html l"><div class="order_name l">SWISSGEAR 男女行李箱 拉杆箱 万向轮旅行箱 登机箱 24寸/20寸</div></a>
+						<div class="order_cs l">颜色分类：梦幻银；尺寸：24寸</div>
+						<div class="order_all l">189.10</div>
+						<div class="order_number l">1</div>					
+					</li>-->
+				</ul>
+			</div>			
+		</div>
+		<div class="sum m">
+				<em>订单总额：</em><span></span>
+			</div>
+			<div class="sub m"><a href="pay.html">提交订单</a></div>
+		<div class="order_end"></div>
+	</body>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/myorder.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/select2.css"/>
+	
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/cookie.js" ></script>	
+	<script type="text/javascript" src="js/area.js" ></script>
+	<script type="text/javascript" src="js/location.js" ></script>
+	<script type="text/javascript" src="js/select2.js" ></script>
+	<script type="text/javascript" src="js/select2_locale_zh-CN.js" ></script>	
+	<script type="text/javascript" src="js/jquery.validate.js" ></script>
+	<script type="text/javascript" src="js/jquery.validate.messages_zh.js" ></script>
+	<script src="js/myorder.js" type="text/javascript" charset="utf-8"></script>
+</html>
